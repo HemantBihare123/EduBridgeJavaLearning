@@ -30,6 +30,15 @@ public class ReverseString {
 		}
 		System.out.println("Reverse of string using charAt: " + '\n' + rev);
 	}
+	
+//	4. Fourth Way
+	public static String dec_loop(String str) {
+		String rev="";
+		for(int i=str.length()-1; i>=0; i--) {
+			rev = rev + str.charAt(i);
+		}
+		return rev;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -42,6 +51,8 @@ public class ReverseString {
 		without_using_Inbuilt_function(str);
 		System.out.println("-------------------------------------------");
 		using_charAt(str);
+		System.out.println("-------------------------------------------");
+		System.out.println(dec_loop(str));
 
 	}
 
