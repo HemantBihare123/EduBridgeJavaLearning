@@ -1,0 +1,29 @@
+package com.learning;
+
+import java.util.Scanner;
+
+public class Problem4 {
+	
+	public static void countChar(String str, char ch) {
+		int count =0;
+		
+		for(int i=0; i<str.length(); i++) {
+			
+			if(str.charAt(i)==ch) {
+				count++;
+			}
+		}
+		System.out.println(count);
+		
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string and character:");
+		String str = sc.next();
+		char ch = sc.next().charAt(0);
+		
+		countChar(str, ch);
+	}
+
+}
